@@ -9,6 +9,16 @@ Tạo ra các mẫu mang các đặc trưng của dữ liệu thực. Các mẫu
 
 ![image](https://user-images.githubusercontent.com/83411225/211195549-5572b1f8-83e3-48f0-9e46-1536c08918e3.png)
 
+```
+!python3 "DataGenerator/generator.py" \
+--count 10000 \
+--output_dir '/outputdir' \
+--extension 'jpg' \
+--dict_dir "DataGenerator/dict/Viet74K.txt" \
+--font_dir "DataGenerator/fonts"
+```
+
+
 ### Mô hình học sâu
 
 ```
@@ -52,8 +62,13 @@ Model(
   (Prediction): Linear(in_features=256, out_features=206, bias=True)
 )
 ```
-Cấu trúc này dựa trên [phương pháp của Baoguang Shi và các cộng sự](https://arxiv.org/pdf/1507.05717.pdf)
-
+Cấu trúc này dựa trên [phương pháp của Baoguang Shi và các cộng sự](https://arxiv.org/pdf/1507.05717.pdf). Để xây dựng mô hình, dùng lệnh.
+```
+!python "OCR/train.py" \
+--train_dir "Training_data" \
+--valid_dir "Valid_data" \
+--saved_model "dir/name_model.pth" 
+```
 
 ### Nhận diện ký tự trong hình
 
@@ -66,6 +81,13 @@ Tính góc nghiêng của các ký tự, làm mịn góc
 ![image](https://user-images.githubusercontent.com/83411225/211196255-ad1c730c-39af-4f52-819e-aced9bd05f60.png)
 
 Sử dụng mô hình đã huấn luyện để nhận dạng ký tự. Cuối cùng viết luật để nhận diện các mục thanh toán
+
+```
+%pip install craft_text_detector
+!python "OCR/predict.py" \
+--predict_dir "image.jpg" \
+--saved_model "dir/name_model.pth" 
+```
 
 ## Kết quả
 
