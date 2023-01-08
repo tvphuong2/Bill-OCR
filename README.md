@@ -1,5 +1,5 @@
 # Bill_OCR ver 0.5
-Một project nhỏ không cần dữ liệu huấn luyện có thể nhận diện các mục thanh toán trong hóa đơn tiếng Việt
+Một project nhỏ không cần dữ liệu huấn luyện có thể nhận diện các mục thanh toán trong hóa đơn tiếng Việt.
 Độ chính xác đang đạt được: 40%.
 
 ## Các thành phần:
