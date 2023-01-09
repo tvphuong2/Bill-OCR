@@ -56,7 +56,7 @@ def train(args):
             init.constant_(param, 0.0)
         elif 'weight' in name:
             init.kaiming_normal_(param)
-    except Exception as e:  # for batchnorm.
+    except Exception as e:
         if 'weight' in name:
             param.data.fill_(1)
         continue
