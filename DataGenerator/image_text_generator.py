@@ -59,14 +59,18 @@ def make_img_text(args, text, fonts, fit):
       for i in range(s[0]):
         for j in range(s[1]):
           img[s[0] - 1 -i,j,:] = img[s[0] - 1 - i,(j+ i//angl)%s[1],:]
+
     txt_img = Image.fromarray(img)
 
-  # txt_mask_draw.text(
-  #   (0, 0),
-  #   text,
-  #   fill=(0,0,3),
-  #   font=image_font,
-  # )
+  for _ in range(rnd.randint(0, 5)):
+        img = np.asarray(txt_img)
+        if len(img[0]) > 30:
+            width = rnd.randint(1, 8)
+            era = rnd.randint(0,len(img[0]) - width)
+            img[:, era:era + width,:] = np.zeros((len(img), width, len(img[0][0])))
+
+            txt_img = Image.fromarray(img)
+
 
   if fit:
       return txt_img.crop(txt_img.getbbox()), txt_mask.crop(txt_img.getbbox())

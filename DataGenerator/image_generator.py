@@ -7,6 +7,8 @@ from image_text_generator import make_img_text
 from background_generator import make_background
 
 def image_generator(args, text, fonts):
+  # old_size = args.size
+  args.size = rnd.randint(32, 64)
    
   fit = False
   if rnd.randint(1,100) < int(100*args.fit_scale):
@@ -75,3 +77,4 @@ def image_generator(args, text, fonts):
   # tess_box_name = "{}.box".format(name)
 
   final_image.save(os.path.join(args.output_dir, image_name))
+  # args.size = old_size

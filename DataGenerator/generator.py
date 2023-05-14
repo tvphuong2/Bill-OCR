@@ -46,7 +46,7 @@ if __name__ == '__main__':
   parser = argparse.ArgumentParser()
   parser.add_argument("--count", type=int, default="1000")
   parser.add_argument("--blur", type=int, default="1")
-  parser.add_argument("--text_color", type=str, default="#282828,#333333")
+  parser.add_argument("--text_color", type=str, default="#242424,#000000")
   parser.add_argument("--size", type=int, default="64")
   parser.add_argument("--width", type=int, default="-1")
   parser.add_argument("--skewing_angle", type=int, default="1")

@@ -9,7 +9,7 @@ from PIL import Image, ImageDraw, ImageFilter
 def make_background(height, width, fit):
     image = np.ones((height, width)) * 255
 
-    cv2.randn(image, rnd.randint(120,255), rnd.randint(3,12))
+    cv2.randn(image, rnd.randint(170,255), rnd.randint(3,12))
 
     color = rnd.randint(0,3)
     size = rnd.randint(1,2)
@@ -44,12 +44,12 @@ def make_background(height, width, fit):
 
     #chấm
     mode = rnd.randint(0,20)
-    if not check and not fit and mode == 1:
-      size = rnd.randint(2,4)
+    if not check and not fit and mode == 1 and height > 50:
+      size = rnd.randint(2, 4)
       if rnd.randint(0,1) == 0:
         pos = rnd.randint(0,8)
       else:
-        pos = rnd.randint(52,63-size)
+        pos = rnd.randint(height-10,height-1-size)
       for i in range(-pos-size, -pos):
         for j in range(0, len(image[0])):
           if (j // size) % 2 == 0:
