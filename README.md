@@ -1,4 +1,4 @@
-# Bill_OCR ver 0.8
+# Vietnamese Receipt OCR ver 0.8
 Một project nhỏ không cần dữ liệu huấn luyện có thể nhận diện các mục thanh toán trong hóa đơn tiếng Việt.
 Độ chính xác đang đạt được: 63%.
 
