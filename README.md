@@ -7,7 +7,8 @@ Một project nhỏ không cần dữ liệu huấn luyện có thể nhận di�
 ### Tạo mẫu huấn luyện
 Tạo ra các mẫu mang các đặc trưng của dữ liệu thực. Các mẫu này có các đặc trưng như nhiễu, nghiêng, lệch, mờ, ... với đa dạng kiểu chữ.
 
-![image](https://user-images.githubusercontent.com/83411225/211195549-5572b1f8-83e3-48f0-9e46-1536c08918e3.png)
+(![image](https://github.com/tvphuong2/Bill-OCR/assets/83411225/0b43b207-51c6-45c5-8985-ee999e6ab422)
+
 
 ```
 !python3 "DataGenerator/generator.py" \
@@ -78,7 +79,8 @@ Sử dụng thư viện craft để nhận diện tối đa ký tự có trong k
 
 Tính góc nghiêng của các ký tự, làm mịn góc
 
-![image](https://user-images.githubusercontent.com/83411225/211196255-ad1c730c-39af-4f52-819e-aced9bd05f60.png)
+![image](https://github.com/tvphuong2/Bill-OCR/assets/83411225/cd012e32-a626-4c9c-9ba1-b3118be036a3)
+
 
 Sử dụng mô hình đã huấn luyện để nhận dạng ký tự. Cuối cùng viết luật để nhận diện các mục thanh toán
 
@@ -91,11 +93,8 @@ Sử dụng mô hình đã huấn luyện để nhận dạng ký tự. Cuối c
 
 ## Kết quả
 
-![image](https://user-images.githubusercontent.com/83411225/211196417-9e9309eb-34aa-4cec-ad68-d34410d78f73.png)
+![image](https://github.com/tvphuong2/Bill-OCR/assets/83411225/79d47606-0f25-4eaa-9006-652ff5f415b2)
 
+![image](https://github.com/tvphuong2/Bill-OCR/assets/83411225/dfad6e24-8f21-43be-aa25-1e451a58e57f)
 
-![image](https://user-images.githubusercontent.com/83411225/211196393-cce8a337-beb1-46ee-950d-db6efed3c364.png)
-
-![image](https://user-images.githubusercontent.com/83411225/211196426-10420267-bba3-4767-a2c6-00ebe2c924aa.png)
-
-![image](https://user-images.githubusercontent.com/83411225/211196433-afa83c46-a050-4e2d-bef4-2f60f5575167.png)
+![image](https://github.com/tvphuong2/Bill-OCR/assets/83411225/cd282486-957c-49fb-b1d0-1ba12f89d579)
