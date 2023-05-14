@@ -1,6 +1,6 @@
-# Bill_OCR ver 0.5
+# Bill_OCR ver 0.8
 Một project nhỏ không cần dữ liệu huấn luyện có thể nhận diện các mục thanh toán trong hóa đơn tiếng Việt.
-Độ chính xác đang đạt được: 40%.
+Độ chính xác đang đạt được: 63%.
 
 ## Các thành phần:
 
@@ -63,7 +63,7 @@ Model(
   (Prediction): Linear(in_features=256, out_features=206, bias=True)
 )
 ```
-Cấu trúc này dựa trên [phương pháp của Baoguang Shi và các cộng sự](https://arxiv.org/pdf/1507.05717.pdf). Để xây dựng mô hình, dùng lệnh.
+Cấu trúc này dựa trên mô hình easy OCR. Để xây dựng mô hình, dùng lệnh.
 ```
 !python "OCR/train.py" \
 --train_dir "Training_data" \
